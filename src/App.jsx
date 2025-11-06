@@ -21,7 +21,7 @@ function App() {
   const [summary, setSummary] = useState({
     workDone: '',
     recommendations: '',
-    signatures: { techSignature: '', customerSignature: '' },
+    signatures: { techSignature: '', customerSignature: '', techSignatureImage: '', customerSignatureImage: '' },
   });
 
   // Persist to localStorage so techs don't lose progress accidentally
@@ -90,7 +90,7 @@ function App() {
     setSummary({
       workDone: '',
       recommendations: '',
-      signatures: { techSignature: '', customerSignature: '' },
+      signatures: { techSignature: '', customerSignature: '', techSignatureImage: '', customerSignatureImage: '' },
     });
     localStorage.removeItem('serviceProtocol');
   };
